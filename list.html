@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vitamin</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="color.js"></script>
+</head>
+
+<body>
+  <input type="button" value="night" onclick="
+  var target=document.querySelector('body')
+  handler(this);
+ ">
+
+<div class="container">
+  <div class="head">
+    <h1>Vitamin</h1>
+  </div>
+
+  <div class="link">
+  <ul>
+    <li><a href="list.html">List</li></a>
+    <li><a href="intake.html">Intake</li></a>
+    <li><a href="biochemical.html">Biochemical function</li></a>
+  </ul>
+  </div>
+
+  <div class="article">
+    <h2 style="font-size:40px; margin-bottom:30px">List</h2>
+      <th></th>
+        <table boder="1" bordercolor="grey" align ="center" style="font-size:18px; border-spacing:3px">
+          <tr bgcolor="skyblue"> <!--첫번째 줄 시작-->
+            <td width="140px" align ="center"> vitamin </td> <!--첫번째 칸-->
+            <td width="110px" align ="center"> Solubility </td><!--두번째 칸-->
+            <td width="380px"> Deficiency disease </td>
+            <td> Food sources </td>
+          </tr> <!--첫번째 줄 끝-->
+          <tr> <!--두번째 줄 시작-->
+            <td align ="center"> Vitamin B1 </td>
+            <td align ="center"> water </td>
+            <td> Beriberi, Wernicke-Korsakoff syndrome </td>
+            <td> Pork, wholemeal grains, vegetables, potatoes, liver, eggs </td>
+          </tr>
+          <tr> <!--세번째 줄 시작-->
+            <td align ="center"> Vitamin B2 </td>
+            <td align ="center"> water </td>
+            <td> Ariboflavinosis, glossitis, angular stomatitis </td>
+            <td> Dairy products, bananas, green beans, asparagus </td>
+          </tr>
+          <tr> <!--네번째 줄 시작-->
+            <td align ="center"> Vitamin B3 </td>
+            <td align ="center"> water </td>
+            <td> Liver damage (doses > 2g/day) and other problems </td>
+            <td> Meat, fish, eggs, many vegetables, mushrooms, tree nuts </td>
+          </tr>
+          <tr> <!--다섯번째 줄 시작-->
+            <td align ="center"> Vitamin B5 </td>
+            <td align ="center"> water </td>
+            <td> Diarrhea; possibly nausea and heartburn. </td>
+            <td> Meat, broccoli, avocados </td>
+          </tr>
+          <tr> <!--여섯번째 줄 시작-->
+            <td align ="center"> Vitamin B6 </td>
+            <td align ="center"> water </td>
+            <td> Impairment of proprioception, nerve damage (doses > 100 mg/day) </td>
+            <td> 	Meat, vegetables, tree nuts, bananas </td>
+          </tr>
+          <tr> <!--일곱번째 줄 시작-->
+            <td align ="center"> Vitamin B7 </td>
+            <td align ="center"> water </td>
+            <td style="color:red"> nothing </td>
+            <td> Raw egg yolk, liver, peanuts, leafy green vegetables </td>
+          </tr>
+          <tr> <!--여덟번째 줄 시작-->
+            <td align ="center"> Vitamin B9 </td>
+            <td align ="center"> water </td>
+            <td> May mask symptoms of vitamin B12 deficiency; other effects. </td>
+            <td> Leafy vegetables, pasta, bread, cereal, liver </td>
+          </tr>
+          <tr>
+            <td align ="center"> Vitamin B12 </td>
+            <td align ="center"> water </td>
+            <td style="color:red">None proven</td>
+            <td> Meat, poultry, fish, eggs, milk</td>
+          </tr>
+          <tr>
+            <td align ="center"> Vitamin C </td>
+            <td align ="center"> water </td>
+            <td> 	Stomach Pain, Diarrhoea and Flatulence </td>
+            <td> Many fruits and vegetables, liver  </td>
+          </tr>
+          <tr>
+            <td align ="center"> Vitamin A </td>
+            <td align ="center"> fat </td>
+            <td> Hypervitaminosis A </td>
+            <td> from animal origin as Vitamin A / all-trans-Retinol: Fish in general, liver and dairy products;
+                from plant origin as provitamin A / all-trans-beta-carotene: orange, ripe yellow fruits, leafy
+                vegetables, carrots, pumpkin, squash, spinach </td>
+          </tr>
+          <tr>
+            <td align ="center"> Vitamin D </td>
+            <td align ="center"> fat </td>
+            <td> Hypervitaminosis D </td>
+            <td> Eggs, liver, certain fish species such as sardines, certain mushroom species such as shiitake </td>
+          </tr>
+          <tr>
+            <td align ="center"> Vitamin E </td>
+            <td align ="center"> fat </td>
+            <td> Possible increased incidence of congestive heart failure. </td>
+            <td> Many fruits and vegetables, nuts and seeds, and seed oils </td>
+          </tr>
+          <tr>
+            <td align ="center"> Vitamin K </td>
+            <td align ="center"> fat </td>
+            <td> Decreased anticoagulation effect of warfarin. </td>
+            <td> Leafy green vegetables such as spinach; egg yolks; liver </td>
+          </tr>
+       </table>
+    <p style="margin-top:60px"> <img src="2.jpg" width="80%";> </p>
+  </div>
+  <p class="footer">
+  <script>
+  function button_event(){
+    if(confirm('Do you want to "back" to the main page?')==true){
+      location.replace('index.html');
+    }else {
+      return;
+    }
+  }
+  </script>
+  <input type="button" value="Main" onclick="button_event()">
+  </p>
+</body>
+</html>

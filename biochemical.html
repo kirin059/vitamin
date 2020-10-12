@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vitamin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="color.js"></script>
+</head>
+
+<body>
+  <input type="button" value="night" onclick="
+  var target=document.querySelector('body')
+  handler(this);
+ ">
+
+<div class="container">
+  <div class="head">
+    <h1>Vitamin</h1>
+  </div>
+
+  <div class="link">
+  <ul>
+    <li><a href="list.html">List</li></a>
+    <li><a href="intake.html">Intake</li></a>
+    <li><a href="biochemical.html">Biochemical function</li></a>
+  </ul>
+  </div>
+
+  <div class="article">
+    <h2 style="font-size:30px;"><strong>On fetal growth and childhood development</strong></h2>
+    <p style="margin-top:30px;">Vitamins are essential for the normal growth and development of a multicellular
+      organism. Using the genetic blueprint inherited from its parents, a fetus develops from the nutrients
+      it absorbs. It requires certain vitamins and minerals to be present at certain times.
+      <mark class="green">These nutrients facilitate the chemical reactions that produce among other things, skin, bone, and muscle.</mark>
+      If there is serious deficiency in one or more of these nutrients, a child may develop a deficiency disease.
+       Even minor deficiencies may cause permanent damage.</p>
+    <p style="margin-top:40px"><img src="3.jpg" width="50%";></p>
+    <h2 style="font-size:30px; margin-top:120px"><strong>On adult health maintenance</strong></h2>
+    <p style="margin-top:30px;">Once growth and development are completed, <mark class="grey">vitamins remain essential nutrients
+      for the healthy maintenance of the cells, tissues, and organs that make up a multicellular organism</mark>; they also
+      enable a multicellular life form <mark class="grey">to efficiently use chemical energy provided by food it eats</mark>, and <mark class="grey">to help process
+      the proteins, carbohydrates, and fats required for cellular respiration</mark>.</p>
+    <p style="margin-top:40px"><img src="4.jpg" width="50%";></p>
+    </div>
+
+    <div class="article2">
+    <h2 style="font-size:40px; margin-top:80px; margin-bottom:40px;">Functions</h2>
+    <p style="margin-top:30px;"><mark class="green";>Vitamins have diverse biochemical functions.</mark> Vitamin A acts as a regulator of cell and tissue growth and differentiation.
+      Vitamin D provides a hormone-like function, regulating mineral metabolism for bones and other organs. The B complex vitamins function as enzyme
+      cofactors (coenzymes) or the precursors for them. Vitamins C and E function as antioxidants. <mark class="grey";>Both deficient and excess intake of a vitamin can
+      potentially cause clinically significant illness</mark>, although excess intake of water-soluble vitamins is less likely to do so.</p>
+
+    <p style="margin-top:20px;">Before 1935, the only source of vitamins was from food[citation needed]. If intake of vitamins was lacking,
+      the result was vitamin deficiency and consequent deficiency diseases. Then, commercially produced tablets of yeast-extract vitamin B complex
+      and semi-synthetic vitamin C became available[citation needed]. This was followed in the 1950s by the mass production and marketing of vitamin
+      supplements, including multivitamins, to prevent vitamin deficiencies in the general population. Governments mandated addition of vitamins
+      to staple foods such as flour or milk, referred to as food fortification, to prevent deficiencies. Recommendations for folic acid supplementation
+      during pregnancy reduced risk of infant neural tube defects.</p>
+
+    <p style="margin-top:20px;">The term vitamin is derived from the word vitamine, which was coined in 1912 by Polish biochemist Casimir Funk,
+      who isolated a complex of micronutrients essential to life, all of which he presumed to be amines. When this presumption was later determined
+      not to be true, the "e" was dropped from the name. <strong>All vitamins were discovered (identified) between 1913 and 1948</strong></p>
+  </div>
+
+  <p class="footer">
+  <script>
+  function button_event(){
+    if(confirm('Do you want to "back" to the main page?')==true){
+      location.replace('index.html');
+    }else {
+      return;
+    }
+  }
+  </script>
+  <input type="button" value="Main" onclick="button_event()">
+  </p>
+</body>
+</html>

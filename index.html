@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vitamin</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+
+  <!--바꾸기 전 (1)
+      <script>
+      function handler(self){
+         var target=document.querySelector('body')
+         if(self.value==='night'){
+           target.style.backgroundColor='black';
+           target.style.color='white';
+           self.value='day';
+
+             var alist=document.querySelectorAll('a');
+             var i = 0;
+             while(i < alist.length){
+             alist[i].style.color = 'powderblue';
+             i = i+1;
+           }
+         } else {
+           target.style.backgroundColor='white';
+           target.style.color='black';
+           self.value='night';
+
+           var alist=document.querySelectorAll('a');
+           var i = 0;
+           while(i < alist.length){
+           alist[i].style.color = 'blue';
+           i = i+1;
+         }
+         }
+      }
+      </script>
+  -->
+
+  <!--바꾸기 전 (2)
+      <script>
+        function BodySetBackColor(color){
+            document.querySelector('body').style.backgroundColor=color;
+        }
+
+        function BodySetColor(color){
+            document.querySelector('body').style.color=color;
+        }
+
+        function LinksSetColor(color){
+            var alist=document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+            alist[i].style.color = color;
+            i = i+1;
+            }
+        }
+        function handler(self){
+            var target=document.querySelector('body')
+            if(self.value==='night'){
+              Body.setBackColor('black');
+              Body.setColor('white');
+              self.value='day';
+
+              Links.setColor('powderblue');
+
+            } else {
+              Body.setBackColor('white');
+              Body.setColor('black');
+              self.value='night';
+
+              Links.setColor('blue');
+            }
+         }
+      </script>
+  -->
+
+
+<script src="color.js"></script>
+<body>
+  <!-- (첫번째)
+      <input id="click" type="button" value="night" onclick="
+      if(document.querySelector('#click').value==='night'){
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('#click').value='day';
+      } else {
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('#click').value='night';
+      }
+      ">
+
+      var alist=document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+      alist[i].style.color = 'powderblue';
+      i = i+1;
+    }
+-->
+
+<!-- (두번째)
+      <input type="button" value="night" onclick="
+      var target=document.querySelector('body')
+      if(this.value==='night'){
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        this.value='day';
+
+        var alist=document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+        alist[i].style.color = 'powderblue';
+        i = i+1;
+      }
+      } else {
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        this.value='night';
+
+        var alist=document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+        alist[i].style.color = 'blue';
+        i = i+1;
+      }
+      }
+      ">
+-->
+
+  <input type="button" value="night" onclick="
+  var target=document.querySelector('body')
+  handler(this);
+ ">
+
+  <div class="container">
+    <div class="head">
+      <h1>Vitamin</h1>
+    </div>
+
+    <div class="link">
+    <ul>
+      <li><a href="list.html">List</li></a>
+      <li><a href="intake.html">Intake</li></a>
+      <li><a href="biochemical.html">Biochemical function</li></a>
+    </ul>
+    </div>
+
+    <div class="article">
+      <h2 style="font-size:40px;">Definition</h2>
+      <p style="margin-top:30px;">A vitamin is an organic molecule <em>(or a chemically closely related set of molecules, i.e. vitamers)</em> that is an essential micronutrient
+        which an organism needs in small quantities for the proper functioning of its metabolism. Essential nutrients cannot be synthesized
+        in the organism, either at all or not in sufficient quantities, and therefore must be obtained through the diet. Vitamin C can be synthesized
+        by some species but not by others; it is not a vitamin in the first instance but is in the second. The term vitamin does not include the three
+        other groups of essential nutrients: minerals, essential fatty acids, and essential amino acids. Most vitamins are not single molecules,
+        but groups of related molecules called vitamers. For example, vitamin E consists of four tocopherols and four tocotrienols. Some sources list
+        fourteen vitamins, by including choline, but <mark class="green";>major health organizations list thirteen</mark>: </p>
+
+      <ol style="font-weight:bold; margin-top:40px; margin-bottom:80px;">
+        <li style="color:red;">vitamin A (as all-trans-retinol, all-trans-retinyl-esters, as well as all-trans-beta-carotene and other provitamin A carotenoids)</li>
+        <li>vitamin B1 (thiamine)</li>
+        <li>vitamin B2 (riboflavin)</li>
+        <li>vitamin B3 (niacin)</li>
+        <li>vitamin B5 (pantothenic acid)</li>
+        <li style="color:red;">vitamin B6 (pyridoxine)</li>
+        <li>vitamin B7 (biotin)</li>
+        <li  style="color:red;">vitamin B9 (folic acid or folate) <em>*엽산</em></li>
+        <li style="color:red;">vitamin B12 (cobalamins)</li>
+        <li style="color:red;">vitamin C (ascorbic acid)</li>
+        <li style="color:red;">vitamin D (calciferols)</li>
+        <li>vitamin E (tocopherols and tocotrienols)</li>
+        <li>vitamin K (phylloquinone and menaquinones)</li>
+      </ol>
+          <img src="1.jpg" width="50%";>
+      </div>
+
+      <div class="article2">
+        <h2 style="font-size:40px; margin-top:80px; margin-bottom:40px;">Functions</h2>
+        <p style="margin-top:30px;"><mark class="green";>Vitamins have diverse biochemical functions.</mark> Vitamin A acts as a regulator of cell and tissue growth and differentiation.
+          Vitamin D provides a hormone-like function, regulating mineral metabolism for bones and other organs. The B complex vitamins function as enzyme
+          cofactors (coenzymes) or the precursors for them. Vitamins C and E function as antioxidants. <mark class="grey";>Both deficient and excess intake of a vitamin can
+          potentially cause clinically significant illness</mark>, although excess intake of water-soluble vitamins is less likely to do so.</p>
+
+        <p style="margin-top:20px;">Before 1935, the only source of vitamins was from food[citation needed]. If intake of vitamins was lacking,
+          the result was vitamin deficiency and consequent deficiency diseases. Then, commercially produced tablets of yeast-extract vitamin B complex
+          and semi-synthetic vitamin C became available[citation needed]. This was followed in the 1950s by the mass production and marketing of vitamin
+          supplements, including multivitamins, to prevent vitamin deficiencies in the general population. Governments mandated addition of vitamins
+          to staple foods such as flour or milk, referred to as food fortification, to prevent deficiencies. Recommendations for folic acid supplementation
+          during pregnancy reduced risk of infant neural tube defects.</p>
+
+        <p style="margin-top:20px;">The term vitamin is derived from the word vitamine, which was coined in 1912 by Polish biochemist Casimir Funk,
+          who isolated a complex of micronutrients essential to life, all of which he presumed to be amines. When this presumption was later determined
+          not to be true, the "e" was dropped from the name. <strong>All vitamins were discovered (identified) between 1913 and 1948</strong></p>
+    </div>
+
+  <p class="footer">
+    <script>
+    function button_event(){
+      if(confirm('Do you want to "back" to the main page?')==true){
+        location.replace('index.html');
+      }else {
+        return;
+      }
+    }
+    </script>
+    <input type="button" value="Main" onclick="button_event()">
+  </p>
+</body>
+</html>
